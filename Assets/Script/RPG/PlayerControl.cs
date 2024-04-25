@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FightSys : MonoBehaviour
+public class PlayerControl : MonoBehaviour
 {
-    [SerializeField] public List<GameObject> Enems;
-    [SerializeField] public List<GameObject> Players;
     // Start is called before the first frame update
     void Start()
     {
