@@ -3,66 +3,63 @@ using TMPro;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.UI;
 
 public class Dialogue : MonoBehaviour
 {
-    [SerializeField] private TextAsset dialogueFile; 
+    [SerializeField] CsvReader csvReader;
+    [SerializeField] GameControl gameControl;
+
     [SerializeField] private List<string> Dielogues_eng;
     [SerializeField] private List<string> Dielogues_chi;
-    [SerializeField] private List<DialogueData> Dielogues_datalist = new();
-    public class DialogueData
-    {
-        public string ID;
-        public string chinese;
-        public string english;
-    }
-    public class DialogueDataChi
-    {
-        public string ID;
-        public string chinese;
-    }
-    public class DialogueDataEng
-    {
-        public string ID;
-        public string english;
-    }
+
+    [SerializeField] private TextMeshProUGUI dialogue;
+
+    [SerializeField] public int line;
+
+
 
 
     // Start is called before the first frame update
     void Start()
     {
-        ReadCSV();
+        //Dielogues_eng = csvReader.Dielogues_eng.ToList();
+        //Dielogues_chi = csvReader.Dielogues_chi.ToList();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        ReadStory();
     }
 
-    private void ReadCSV()
+    public void ReadStory()
     {
-        Dielogues_datalist.Clear();
-        Debug.Log("ReadCSV!!!!");
-
-        string[] dialogues = dialogueFile.text.Split('\n');
-        foreach (string line in dialogues.Skip(1)) // Skip the header x2 跳過1、2排(橫排)
+        if (gameControl.isbattle != true)
         {
-            string[] values = line.Split(',');// 用 , 分隔每個單位
-            if (values.Length == 3)
+            if (gameControl.isEng == true)
             {
-                DialogueData data = new DialogueData 
+                dialogue.text = csvReader.Dielogues_eng[line];
+                if (Input.GetKeyDown(KeyCode.Mouse1))
                 {
-                    ID = values[0].Trim(),
-                     chinese= values[1].Trim(),
-                     english= values[2].Trim()
-                };
-                Dielogues_datalist.Add(data);
+                    line += 1;
+                    dialogue.text = csvReader.Dielogues_eng[line];
+                    return;
+                }
+            }
+            else
+            {
+                dialogue.text = csvReader.Dielogues_chi[line];
+                if (Input.GetKeyDown(KeyCode.Mouse1))
+                {
+                    line += 1;
+                    dialogue.text = csvReader.Dielogues_chi[line];
+                    return;
+                }
             }
 
-            Dielogues_eng = Dielogues_datalist.Select(data => $"{data.ID},{data.english}").ToList();
-            Dielogues_chi = Dielogues_datalist.Select(data => $"{data.ID},{data.chinese}").ToList();
         }
-    }
 
+
+    }
 }
