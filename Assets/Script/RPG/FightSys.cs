@@ -17,4 +17,29 @@ public class FightSys : MonoBehaviour
     {
         
     }
+
+    private void SelectTarget()
+    {
+
+    }
+
+
+    private void PlayerAttack()
+    {
+
+    }
+    private void PlayerSkill()
+    {
+
+    }
+
+    private void EnemAttack()
+    {
+
+    }
+    private void EnemSkill()
+    {
+
+    }
+
 }
