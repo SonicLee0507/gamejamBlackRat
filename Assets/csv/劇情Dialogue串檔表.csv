@@ -1,78 +1,78 @@
 ﻿id,中文內容,英文
-dialogue_1,子卿：喔天！！剛剛龍華是又地震了嗎！？,dialogue_1
-dialogue_2,煎餃：應該是喔。,dialogue_2
-dialogue_3,鴨子：什麼地震？我被關燈了什麼都看不到！,dialogue_3
-dialogue_4,老李：呃⋯⋯鴨子，你可以把頭盔拿下來。,dialogue_4
-dialogue_5,敏翔：好的各位，看來我們是掉到了異世界版的龍華。,dialogue_5
-dialogue_6,老李：老師你好像有點太嗨了！,dialogue_6
-dialogue_7,敏翔：接下來就由我來告訴你們該怎麼回去。（無視老李）,dialogue_7
+dialogue_1,子卿：喔天!!剛剛龍華是又地震了嗎!?,Ziqing: Oh my! Did Longhua just have another earthquake?
+dialogue_2,煎餃：應該是喔.,Dumplin: It seems so.
+dialogue_3,鴨子：什麼地震?我被關燈了什麼都看不到!,Duck: What earthquake? I can't see anything with the lights off!
+dialogue_4,老李：呃⋯⋯鴨子，你可以把頭盔拿下來.,"Li: Uh... Duck, you can take off your helmet."
+dialogue_5,Sensei：好的各位，看來我們是掉到了異世界版的龍華.,"Sensei: Alright everyone, it seems we've fallen into a parallel world version of Longhua."
+dialogue_6,老李：老師你好像有點太嗨了!,"Li: Teacher, you seem a bit too excited!"
+dialogue_7,Sensei：接下來就由我來告訴你們該怎麼回去.（無視老李）,Sensei: I'll tell you all how to get back next. (Ignoring Li)
 dialogue_8,ChangeToBattle,ChangeToBattle
-dialogue_9,敏翔：相信你們都有發現到自己身上的變化！,dialogue_9
-dialogue_10,鴨子：看著老師那樣也很難不發現到吧？,dialogue_10
-dialogue_11,敏翔：現在你們每個人都有技能跟大招，非常的遊戲。,dialogue_11
-dialogue_12,敏翔：好了各位！接下來就靠你們了！,dialogue_12
-dialogue_13,敏翔：我回辦公室等你們的好消息！,dialogue_13
-dialogue_14,煎餃：啊不是老師就這樣走了喔！,dialogue_14
-dialogue_15,子卿：我們被當成廉價傭兵了！,dialogue_15
-dialogue_16,老李：總之就先繼續前進吧。,dialogue_16
-dialogue_17,鴨子：不對吧？這不對吧？,dialogue_17
-dialogue_18,煎餃：鴨子你說什麼不對？,dialogue_18
-dialogue_19,鴨子：周圍都是老鼠啊！！？龍華什麼時候連衛生都這麼糟糕了！,dialogue_19
-dialogue_20,子卿：這可是龍華欸。,dialogue_20
-dialogue_21,老李：龍華不是除了廁所都這樣嗎？,dialogue_21
-dialogue_22,老李：話說看來這是黑死病氾濫的龍華，因為我還看到了跳蚤。,dialogue_22
-dialogue_23,煎餃：說到跳蚤，那邊有隻很大隻的跳蚤在朝我們衝過來欸？,dialogue_23
-dialogue_24,鴨子：靠腰啊！！！,dialogue_24
-dialogue_25,老鼠：自己送上門的食物，看來是我的外賣！,dialogue_25
-dialogue_26,跳蚤：（比讚）,dialogue_26
-dialogue_27,煎餃：啊？會說話的老鼠！,dialogue_27
-dialogue_28,老鼠：唧？會說話的外賣！,dialogue_28
+dialogue_9,Sensei：相信你們都有發現到自己身上的變化!,Sensei: I believe you've all noticed the changes in yourselves!
+dialogue_10,鴨子：看著老師那樣也很難不發現到吧?,"Duck: It's hard not to notice when you look at the teacher like that, right?"
+dialogue_11,Sensei：現在你們每個人都有技能跟大招，非常的遊戲.,"Sensei: Now each of you has skills and ultimate moves, very much like a game."
+dialogue_12,Sensei：好了各位!接下來就靠你們了!,Sensei: Alright everyone! It's up to you now!
+dialogue_13,Sensei：我回辦公室等你們的好消息!,Sensei: I'll be back in my office waiting for your good news!
+dialogue_14,煎餃：啊不是老師就這樣走了喔!,"Dumplin: Oh, the teacher is just leaving like that?"
+dialogue_15,子卿：我們被當成廉價傭兵了!,Ziqing: We've been treated like cheap mercenaries!
+dialogue_16,老李：總之就先繼續前進吧.,"Li: Anyway, let's continue forward for now."
+dialogue_17,鴨子：不對吧?這不對吧?,"Duck: Wait, this isn't right! This isn't right at all!"
+dialogue_18,煎餃：鴨子你說什麼不對?,"Dumplin: What's not right, Duck?"
+dialogue_19,鴨子：周圍都是老鼠啊!!?龍華什麼時候連衛生都這麼糟糕了!,"Duck: There are mice everywhere!! When did Longhua become so terrible, even in terms of hygiene?"
+dialogue_20,子卿：這可是龍華欸.,"Ziqing: This is Longhua, though."
+dialogue_21,老李：龍華不是除了廁所都這樣嗎?,Li: Isn't Longhua like this except for the toilets?
+dialogue_22,老李：話說看來這是黑死病氾濫的龍華，因為我還看到了跳蚤.,"Li: It seems this is Longhua during the Black Death, because I even saw fleas."
+dialogue_23,煎餃：說到跳蚤，那邊有隻很大隻的跳蚤在朝我們衝過來欸?,"Dumplin: Speaking of fleas, there's a very big flea over there charging towards us?"
+dialogue_24,鴨子：靠腰啊!!!,Duck: Oh shxt!!!
+dialogue_25,老鼠：自己送上門的食物，看來是我的外賣!,"Mouse: Food delivered to my door, looks like it's my takeout!"
+dialogue_26,跳蚤：（比讚）,Flea: (Thumbs up)
+dialogue_27,煎餃：啊?會說話的老鼠!,Dumplin: Huh? A talking mouse!
+dialogue_28,老鼠：唧?會說話的外賣!,Mouse: Squeak? Talking takeout!
 dialogue_29,ChangeToBattle,ChangeToBattle
-dialogue_30,子卿：我感覺我的肌腱炎要復發了。,dialogue_30
-dialogue_31,鴨子：我反而是覺得打完跳蚤我全身都癢癢的......。,dialogue_31
-dialogue_32,煎餃：啊？女人你要不要去洗澡？,dialogue_32
-dialogue_33,鴨子：不了，鴨子專門去寵物店洗澡有點貴。,dialogue_33
-dialogue_34,子卿：阿鴨你可以考慮龍華滑水道！,dialogue_34
-dialogue_35,鴨子：那我不會再上山欸，爬龍華山好累。,dialogue_35
-dialogue_36,老李：這樣打敵人會有傷害加成嗎？,dialogue_36
+dialogue_30,子卿：我感覺我的肌腱炎要復發了.,Ziqing: I feel like my tendonitis is going to flare up again.
+dialogue_31,鴨子：我反而是覺得打完跳蚤我全身都癢癢的.......,Duck: I actually feel itchy all over after dealing with the fleas...
+dialogue_32,煎餃：啊?女人你要不要去洗澡?,"Dumplin: Huh? Duck, do you want to take a bath?"
+dialogue_33,鴨子：不了，鴨子專門去寵物店洗澡有點貴.,"Duck: No, it's too expensive to go to the pet store for a bath."
+dialogue_34,子卿：阿鴨你可以考慮龍華滑水道!,"Ziqing: Ah Duck, you should consider the Longhua water slide!"
+dialogue_35,鴨子：那我不會再上山欸，爬龍華山好累.,"Duck: I won't go up there anymore, climbing this shxt Mountain is tired."
+dialogue_36,老李：這樣打敵人會有傷害加成嗎?,Li: Will this deal extra damage to enemies?
 dialogue_37,ChangeToBattle,ChangeToBattle
-dialogue_38,老李：是我的錯覺還是我的血量變低了？,dialogue_38
-dialogue_39,鴨子：欸你不要亂說話喔！我還想安全過關。,dialogue_39
-dialogue_40,煎餃：完了現在換隊長出事了！,dialogue_40
-dialogue_41,老李：應該是我的錯覺啦我們繼續前進吧。,dialogue_41
+dialogue_38,老李：是我的錯覺還是我的血量變低了?,"Li: Is it just me, or has my health decreased?"
+dialogue_39,鴨子：欸你不要亂說話喔!我還想安全過關.,"Duck: Hey, don't jinx it! I want to clear this safely."
+dialogue_40,煎餃：完了現在換隊長出事了!,"Dumplin: Uh oh, now the team leader is in trouble!"
+dialogue_41,老李：應該是我的錯覺啦我們繼續前進吧.,"Li: It's probably just my imagination, let's keep moving forward."
 dialogue_42,ChangeToBattle,ChangeToBattle
-dialogue_43,鴨子：啊龍華是怎麼回事？骷髏都出現了。,dialogue_43
-dialogue_44,子卿：好陰喔。,dialogue_44
-dialogue_45,煎餃：可是他們會跳舞欸。,dialogue_45
-dialogue_46,子卿：抓去當舞女！給我賺money！,dialogue_46
-dialogue_47,老李：應該快到大boss了吧？,dialogue_47
-dialogue_48,子卿：應該快了，快叫那個該死的傢伙出來。,dialogue_48
-dialogue_49,煎餃：但好像都沒看到什麼boss的蹤跡欸。,dialogue_49
-dialogue_50,老李：用我的遊戲雷達應該快⋯⋯。,dialogue_50
-dialogue_51,鴨子：哇，預言家。,dialogue_51
+dialogue_43,鴨子：啊龍華是怎麼回事?骷髏都出現了.,Duck: What's going on with Longhua? Skeletons are appearing.
+dialogue_44,子卿：好陰喔.,Ziqing: Very eerie.
+dialogue_45,煎餃：可是他們會跳舞欸.,Dumplin: But they can dance.
+dialogue_46,子卿：抓去當舞女!給我賺money!,Ziqing: Capture them and make them dance girls! Let's earn some money!
+dialogue_47,老李：應該快到大boss了吧?,"Li: We should be nearing the big boss, right?"
+dialogue_48,子卿：應該快了，快叫那個該死的傢伙出來.,"Ziqing: Probably, call out that damn guy."
+dialogue_49,煎餃：但好像都沒看到什麼boss的蹤跡欸.,Dumplin: But I haven't seen any signs of a boss.
+dialogue_50,老李：用我的遊戲雷達應該快⋯⋯.,"Li: According to my game radar, it should be soon..."
+dialogue_51,鴨子：哇，預言家.,"Duck: Wow, a prophet."
 dialogue_52,ChangeToBattle,ChangeToBattle
-dialogue_53,鴨子：等下啦隊長變魔王了！,dialogue_53
-dialogue_54,煎餃：他這樣有點噁心欸。,dialogue_54
-dialogue_55,子卿：我們真的要打他嗎？,dialogue_55
-dialogue_56,魔王李：把進度⋯⋯交出來！！！,dialogue_56
+dialogue_53,鴨子：等下啦隊長變魔王了!,"Duck: Wait, the team leader is turning into a demon king!"
+dialogue_54,煎餃：他這樣有點噁心欸.,Dumplin: That's kind of gross.
+dialogue_55,子卿：我們真的要打他嗎?,Ziqing: Do we really have to fight him?
+dialogue_56,魔王李：把進度⋯⋯交出來!!!,Demon King Li: Hand over your progress!!!
 dialogue_57,ChangeToBattle,ChangeToBattle
-dialogue_58,鴨子：欸隊長！！！你的USB找到了！在我這！,dialogue_58
-dialogue_59,魔王李：啊啊啊啊啊我的USB！,dialogue_59
-dialogue_60,子卿：你要不要看看你底下的老鼠！是你的糟糕前組員！,dialogue_60
-dialogue_61,魔王李：靠邀！,dialogue_61
+dialogue_58,鴨子：欸隊長!!!你的USB找到了!在我這!,"Duck: Hey, team leader!!! I found your USB! It's with me!"
+dialogue_59,魔王李：啊啊啊啊啊我的USB!,Demon King Li: Ahhhh my USB!
+dialogue_60,子卿：你要不要看看你底下的老鼠!是你的糟糕前組員!,Ziqing: Maybe you should look at the rats under your feet! They're your lousy ex-teammates!
+dialogue_61,魔王李：靠邀!,Demon King Li: Damn it!
 dialogue_62,ChangeToBattle,ChangeToBattle
-dialogue_63,煎餃：呃那個，隊長你沒存到檔喔。,dialogue_63
-dialogue_64,魔王李：幹我熬夜做的程式！,dialogue_64
+dialogue_63,煎餃：呃那個，隊長你沒存到檔喔.,"Dumplin: Um, team leader, you didn't save the game."
+dialogue_64,魔王李：幹我熬夜做的程式!,"Demon King Li: Damn it, I worked all night on that program!"
 dialogue_65,ChangeToBattle,ChangeToBattle
-dialogue_66,鴨子：欸我餓了我們去吃晚餐如何？,dialogue_66
-dialogue_67,子卿：喔可以啊吃什麼？,dialogue_67
-dialogue_68,煎餃：我都可以欸。,dialogue_68
+dialogue_66,鴨子：欸我餓了我們去吃晚餐如何?,"Duck: Hey, I'm hungry. Shall we go eat dinner?"
+dialogue_67,子卿：喔可以啊吃什麼?,"Ziqing: Oh, that sounds good. What should we eat?"
+dialogue_68,煎餃：我都可以欸.,Dumplin: I'm good with anything.
 dialogue_69,ChangeToBattle,ChangeToBattle
-dialogue_70,鴨子：下去看吧。,dialogue_70
-dialogue_71,老李：欸等⋯⋯！,dialogue_71
-dialogue_72,煎餃：你們剛剛有聽到什麼聲音嗎？,dialogue_72
-dialogue_73,鴨子：錯覺吧？,dialogue_73
-dialogue_74,煎餃：啊我們不用去找敏翔嗎？,dialogue_74
+dialogue_70,鴨子：下去看吧.,Duck: Let's go downstairs and check.
+dialogue_71,老李：欸等⋯⋯!,Li: Wai
+dialogue_72,煎餃：你們剛剛有聽到什麼聲音嗎?,Dumplin: Did you guys hear something just now?
+dialogue_73,鴨子：錯覺吧?,"Duck: Probably just our imagination, right?"
+dialogue_74,煎餃：啊我們不用去找Sensei嗎?,"Dumplin: Oh, don't we need to find Sensei?"
 dialogue_75,end,end
 dialogue_76,end,end
 dialogue_77,end,end

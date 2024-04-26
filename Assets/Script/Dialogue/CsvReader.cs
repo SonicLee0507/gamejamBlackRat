@@ -43,7 +43,7 @@ public class CsvReader : MonoBehaviour
 
     private void ReadCSV()
     {
-        Dielogues_datalist.Clear();
+        //Dielogues_datalist.Clear();
         Debug.Log("ReadCSV!!!!");
 
         string[] dialogues = dialogueFile.text.Split('\n');
@@ -61,8 +61,8 @@ public class CsvReader : MonoBehaviour
                 Dielogues_datalist.Add(data);
             }
 
-            Dielogues_eng = Dielogues_datalist.Select(data => $"{data.english}").ToList();
-            Dielogues_chi = Dielogues_datalist.Select(data => $"{data.chinese}").ToList();
+            Dielogues_eng = Dielogues_datalist.Select(data => $"{data.ID},{data.english}").ToList();
+            Dielogues_chi = Dielogues_datalist.Select(data => $"{data.ID},{data.chinese}").ToList();
         }
     }
 

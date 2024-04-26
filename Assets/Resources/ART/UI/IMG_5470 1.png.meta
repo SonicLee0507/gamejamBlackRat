@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -105,7 +105,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: IMG_5470 1_0
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 568
+        width: 375
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf5e81c2029cf64f9c6fd532a6fabce
+      internalID: -102784878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_5470 1_1
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 579
+        width: 410
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a8b3b9dabcffe74186ac6cd56b06b3e
+      internalID: 1887587427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_5470 1_2
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 593
+        width: 381
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7e9e78d581b2248897809732ec57c9
+      internalID: 1671388039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_5470 1_3
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 614
+        width: 368
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c16bbb835284acc46897e98b934473c7
+      internalID: 1643910318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_5470 1_4
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 759
+        width: 953
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c547a4ad76985554bbd2162c5afc2c5d
+      internalID: -369346495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_5470 1_5
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 977
+        width: 1572
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a740d78b185ff5a4a816274a90033536
+      internalID: 1652294896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -116,7 +242,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      IMG_5470 1_2: 1671388039
+      IMG_5470 1_5: 1652294896
+      IMG_5470 1_1: 1887587427
+      IMG_5470 1_4: -369346495
+      IMG_5470 1_0: -102784878
+      IMG_5470 1_3: 1643910318
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
