@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlayerData : MonoBehaviour
 {
+    [SerializeField] float player_hp;
+
+    [SerializeField] int player_attack;
+    [SerializeField] int player_skill;
     // Start is called before the first frame update
     void Start()
     {
