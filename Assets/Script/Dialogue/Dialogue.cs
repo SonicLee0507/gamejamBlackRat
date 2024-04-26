@@ -40,7 +40,7 @@ public class Dialogue : MonoBehaviour
             if (gameControl.isEng == true)
             {
                 dialogue.text = csvReader.Dielogues_eng[line];
-                if (Input.GetKeyDown(KeyCode.Mouse1))
+                if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Space))
                 {
                     line += 1;
                     dialogue.text = csvReader.Dielogues_eng[line];
@@ -50,7 +50,7 @@ public class Dialogue : MonoBehaviour
             else
             {
                 dialogue.text = csvReader.Dielogues_chi[line];
-                if (Input.GetKeyDown(KeyCode.Mouse1))
+                if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Space))
                 {
                     line += 1;
                     dialogue.text = csvReader.Dielogues_chi[line];
