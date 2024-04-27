@@ -43,13 +43,12 @@ public class CsvReader : MonoBehaviour
 
     private void ReadCSV()
     {
-        //Dielogues_datalist.Clear();
         Debug.Log("ReadCSV!!!!");
 
         string[] dialogues = dialogueFile.text.Split('\n');
-        foreach (string line in dialogues.Skip(1)) // Skip the header x2 跳過1、2排(橫排)
+        foreach (string line in dialogues.Skip(1))
         {
-            string[] values = line.Split(',');// 用 , 分隔每個單位
+            string[] values = SplitCsvLine(line);
             if (values.Length == 3)
             {
                 DialogueData data = new DialogueData
@@ -59,11 +58,39 @@ public class CsvReader : MonoBehaviour
                     english = values[2].Trim()
                 };
                 Dielogues_datalist.Add(data);
+                Debug.Log("read line : " + line);
             }
-
-            Dielogues_eng = Dielogues_datalist.Select(data => $"{data.ID},{data.english}").ToList();
-            Dielogues_chi = Dielogues_datalist.Select(data => $"{data.ID},{data.chinese}").ToList();
+            else
+            {
+                Debug.LogWarning("Skipping line with incorrect format: " + line);
+            }
         }
-    }
 
+        Dielogues_eng = Dielogues_datalist.Select(data => $"{data.english}").ToList();
+        Dielogues_chi = Dielogues_datalist.Select(data => $"{data.chinese}").ToList();
+    }
+    private string[] SplitCsvLine(string line)
+    {
+        List<string> values = new List<string>();
+        bool inQuotes = false;
+        string currentValue = "";
+        foreach (char c in line)
+        {
+            if (c == '\"')
+            {
+                inQuotes = !inQuotes;
+            }
+            else if (c == ',' && !inQuotes)
+            {
+                values.Add(currentValue);
+                currentValue = "";
+            }
+            else
+            {
+                currentValue += c;
+            }
+        }
+        values.Add(currentValue);
+        return values.ToArray();
+    }
 }
