@@ -7,25 +7,37 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] private List<Transform> rpg_movepoint;
     [SerializeField] private int stage = 0;
     [SerializeField] private int maxstage = 4;
+    [SerializeField] private float moveSpeed = 1.0f; // ²¾°Ê³t«×
+    [SerializeField] private bool isMoving = false;
     // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         MoveToNextStage();
     }
 
-    public void MoveToNextStage()
+    private void MoveToNextStage()
     {
-        if (Input.GetKeyDown(KeyCode.M) & stage < maxstage)
+        if (Input.GetKeyDown(KeyCode.M) && stage < maxstage)
         {
             stage += 1;
-            transform.position = rpg_movepoint[stage].position;
-            return;
+            if (stage < rpg_movepoint.Count)
+            {
+                StartCoroutine(MoveToPosition(rpg_movepoint[stage].position));
+            }
+        }
+    }
+
+    private IEnumerator MoveToPosition(Vector3 targetPosition)
+    {
+        while (transform.position != targetPosition)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+            yield return null;
         }
     }
 

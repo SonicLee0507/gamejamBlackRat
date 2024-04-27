@@ -58,11 +58,11 @@ public class CsvReader : MonoBehaviour
                     english = values[2].Trim()
                 };
                 Dielogues_datalist.Add(data);
-                Debug.Log("read line : " + line);
+                //Debug.Log("read line : " + line);
             }
             else
             {
-                Debug.LogWarning("Skipping line with incorrect format: " + line);
+                //Debug.LogWarning("Skipping line with incorrect format: " + line);
             }
         }
 
