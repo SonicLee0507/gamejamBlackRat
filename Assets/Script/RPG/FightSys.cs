@@ -67,6 +67,12 @@ public class FightSys : MonoBehaviour
         }
     }
 
+    public void EndBattle()
+    {
+
+    }
+
+
     private void SelectTarget()
     {
         if (isPlayerTurn)
