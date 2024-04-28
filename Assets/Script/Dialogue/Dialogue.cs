@@ -35,8 +35,6 @@ public class Dialogue : MonoBehaviour
 
     public void ReadStory()
     {
-        if (gameControl.isbattle != true)
-        {
             if (gameControl.isEng == true)
             {
                 dialogue.text = csvReader.Dielogues_eng[line];
@@ -58,7 +56,7 @@ public class Dialogue : MonoBehaviour
                 }
             }
 
-        }
+        
 
 
     }

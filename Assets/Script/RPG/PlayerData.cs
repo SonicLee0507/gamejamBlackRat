@@ -1,22 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerData : MonoBehaviour
 {
-    [SerializeField] float player_hp;
+    [SerializeField] public int player_hp;
 
-    [SerializeField] int player_attack;
-    [SerializeField] int player_skill;
+    [SerializeField] public int player_maxhp;
+
+    [SerializeField] public int player_attack;
+    [SerializeField] public int player_skill;
+
+    [SerializeField] public Slider player_healthBar;
     // Start is called before the first frame update
     void Start()
     {
-        
+        player_healthBar.maxValue = player_maxhp;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        player_healthBar.value = player_hp;
     }
 }

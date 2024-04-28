@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameControl : MonoBehaviour
 {
+    [SerializeField] PlayerControl playerControl;
     [SerializeField] Dialogue dialogue;
     [SerializeField] CsvReader csvReader;
     [SerializeField] public bool isbattle = false;
@@ -25,21 +26,21 @@ public class GameControl : MonoBehaviour
             startStory();
 
         }
-
+        //playerControl.GameStageChanger();
         //for testing
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            isStory = true;
-            isbattle = false;
-        }
+        //if (Input.GetKeyDown(KeyCode.T))
+        //{
+        //    isStory = true;
+        //    isbattle = false;
+        //}
 
     }
     void startStory()
     {
         DialoguePage.SetActive(true);
-        if (dialogue.line == 8 || dialogue.line == 29 || dialogue.line == 37 ||
-            dialogue.line == 42 || dialogue.line == 52 || dialogue.line == 58 || dialogue.line == 65
-             || dialogue.line == 69 || dialogue.line == 75)
+        if (dialogue.line == 7 || dialogue.line == 28 || dialogue.line == 36 ||
+            dialogue.line == 41 || dialogue.line == 51 || dialogue.line == 57 || dialogue.line == 64
+             || dialogue.line == 68 || dialogue.line == 75)
         {
             DialoguePage.SetActive(false);
             if (dialogue.line != 75)
@@ -48,12 +49,13 @@ public class GameControl : MonoBehaviour
             }
 
             isStory = false;
-            isbattle = true;
+            Debug.Log("isStory");
+            //isbattle = true;
             return;
         }
         else
         {
-            Debug.Log("wait");
+            //Debug.Log("wait");
         }
     }
 }
