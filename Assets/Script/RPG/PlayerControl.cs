@@ -120,8 +120,8 @@ public class PlayerControl : MonoBehaviour
         {
             stage += 1;
             gameControl.isStory = true;
-            Debug.Log("isStory");
-            dialogue.ReadStory();
+            Debug.Log("isbattle");
+            fightSys.StartBattle();
             Debug.Log("stage1");
         }
         else if (transform.position == rpg_movepoint[8].position & gameControl.isbattle == false & stage == 8)
