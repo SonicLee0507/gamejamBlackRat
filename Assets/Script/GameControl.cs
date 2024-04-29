@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameControl : MonoBehaviour
 {
+
+    [SerializeField] CameraControl cameraControl;
     [SerializeField] PlayerControl playerControl;
     [SerializeField] Dialogue dialogue;
     [SerializeField] CsvReader csvReader;
@@ -11,6 +13,8 @@ public class GameControl : MonoBehaviour
     [SerializeField] public bool isEng = true;
     [SerializeField] public bool isStory = true;
 
+
+    [SerializeField] private AudioSource bgm;
     [SerializeField] private GameObject DialoguePage;
     // Start is called before the first frame update
     void Start()
@@ -26,13 +30,11 @@ public class GameControl : MonoBehaviour
             startStory();
 
         }
-        //playerControl.GameStageChanger();
-        //for testing
-        //if (Input.GetKeyDown(KeyCode.T))
-        //{
-        //    isStory = true;
-        //    isbattle = false;
-        //}
+
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            cameraControl.PlayerShakeAnimation();
+        }
 
     }
     void startStory()
@@ -50,6 +52,7 @@ public class GameControl : MonoBehaviour
 
             isStory = false;
             Debug.Log("isStory");
+            playerControl.MoveToNextStage();
             //isbattle = true;
             return;
         }
@@ -58,4 +61,7 @@ public class GameControl : MonoBehaviour
             //Debug.Log("wait");
         }
     }
+
+
+
 }

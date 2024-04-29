@@ -9,8 +9,6 @@ public class PlayerData : MonoBehaviour
 
     [SerializeField] public int player_maxhp;
 
-    [SerializeField] public int player_attack;
-    [SerializeField] public int player_skill;
 
     [SerializeField] public Slider player_healthBar;
     // Start is called before the first frame update

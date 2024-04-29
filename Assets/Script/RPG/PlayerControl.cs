@@ -23,13 +23,12 @@ public class PlayerControl : MonoBehaviour
 
     private void Update()
     {
-        MoveToNextStage();
         StageDetecter();
     }
 
-    private void MoveToNextStage()
+    public void MoveToNextStage()
     {
-        if (Input.GetKeyDown(KeyCode.M) && stage < maxstage)
+        if (stage < maxstage)
         {
 
             if (stage < rpg_movepoint.Count)

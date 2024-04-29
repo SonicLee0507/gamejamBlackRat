@@ -35,16 +35,23 @@ public class Dialogue : MonoBehaviour
 
     public void ReadStory()
     {
-            if (gameControl.isEng == true)
+        if (gameControl.isEng == true)
+        {
+            dialogue.text = csvReader.Dielogues_eng[line];
+            if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Space))
             {
+                line += 1;
                 dialogue.text = csvReader.Dielogues_eng[line];
-                if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Space))
-                {
-                    line += 1;
-                    dialogue.text = csvReader.Dielogues_eng[line];
-                    return;
-                }
+                return;
             }
+            if (Input.GetKeyDown(KeyCode.LeftAlt))
+            {
+                line += 3;
+                dialogue.text = csvReader.Dielogues_eng[line];
+                return;
+            }
+
+        }
             else
             {
                 dialogue.text = csvReader.Dielogues_chi[line];
@@ -54,6 +61,8 @@ public class Dialogue : MonoBehaviour
                     dialogue.text = csvReader.Dielogues_chi[line];
                     return;
                 }
+
+
             }
 
         

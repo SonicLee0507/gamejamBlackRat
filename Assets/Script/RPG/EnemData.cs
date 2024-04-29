@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class EnemData : MonoBehaviour
 {
+    [SerializeField] public FightSys fightSys;
     [SerializeField] public int enem_hp;
 
     [SerializeField] public int enem_maxhp;
@@ -12,7 +13,11 @@ public class EnemData : MonoBehaviour
     [SerializeField] public int enem_attack;
     [SerializeField] public int enem_skill;
 
+    [SerializeField] public int enem_spot;
+
     [SerializeField] public Slider enem_healthBar;
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +31,21 @@ public class EnemData : MonoBehaviour
 
         if (enem_hp <= 0)
         {
+            if (enem_spot == 1)
+            {
+            fightSys.BattleEnems.Remove(fightSys.BattleEnems[0]);
+            }
+            else if (enem_spot == 2)
+            {
+                fightSys.BattleEnems.Remove(fightSys.BattleEnems[1]);
+            }
+            else
+            {
+                fightSys.BattleEnems.Remove(fightSys.BattleEnems[0]);
+            }
+            fightSys.EndBattle();
             Destroy(gameObject);
+
 
         }
     }
