@@ -23,5 +23,11 @@ public class EnemData : MonoBehaviour
     void Update()
     {
         enem_healthBar.value = enem_hp;
+
+        if (enem_hp <= 0)
+        {
+            Destroy(gameObject);
+
+        }
     }
 }

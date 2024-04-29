@@ -7,6 +7,9 @@ public class FightSys : MonoBehaviour
 {
     public GameControl gameControl;
 
+    [SerializeField] public EnemData enemData1;
+    [SerializeField] public PlayerData playerData;
+
     [SerializeField] public List<GameObject> Enems;
     [SerializeField] public List<GameObject> Players;
 
@@ -14,6 +17,7 @@ public class FightSys : MonoBehaviour
     [SerializeField] private List<GameObject> EnemTargetPointPos;
     [SerializeField] private GameObject targetPoint;
 
+    [SerializeField] public int turnSelect = 0;
     [SerializeField] public int targetSelect = 0;
 
     [SerializeField] public bool isPlayerTurn = true;
@@ -44,10 +48,12 @@ public class FightSys : MonoBehaviour
             if (battleCounts == 0)
             {
                 BattleEnems.Add(Enems[0]);
+                Debug.Log("Add(Enems[0]");
                 SelectTarget();
+
                 dialogue.text = "You've Encounter <br>Angry Nerdy Fatty Rat!!! ";
 
-                //EnemData enemData = BattleEnems[]
+
 
                 return;
             }
@@ -55,6 +61,7 @@ public class FightSys : MonoBehaviour
             {
                 BattleEnems.Add(Enems[1]);
                 dialogue.text = "You've Encounter <br> 2 Angry Nerdy Fatty Rat ";
+                EnemData enemData1 = BattleEnems[0].GetComponent<EnemData>();
             }
             else if (battleCounts == 2)
             {
@@ -92,40 +99,49 @@ public class FightSys : MonoBehaviour
         targetPoint.SetActive(true);
         if (isPlayerTurn & !isEnemTurn)
         {
-           targetSelect = Random.Range(0, Players.Count - 1);
+            turnSelect = Random.Range(0, Players.Count - 1);
 
-            targetPoint.transform.position = PlayerTargetPointPos[targetSelect].transform.position;
-            dialogue.text = "Player" + targetSelect + "'s turn";
+            targetPoint.transform.position = PlayerTargetPointPos[turnSelect].transform.position;
+            dialogue.text = "Player" + turnSelect + "'s turn";
         }
         else if(!isPlayerTurn & isEnemTurn)
         {
-            targetSelect = Random.Range(0,BattleEnems.Count - 1);
-            targetPoint.transform.position = EnemTargetPointPos[targetSelect].transform.position;
-            dialogue.text = "Enemy" + targetSelect + "'s turn";
+            turnSelect = Random.Range(0,BattleEnems.Count - 1);
+            targetPoint.transform.position = EnemTargetPointPos[turnSelect].transform.position;
+            dialogue.text = "Enemy" + turnSelect + "'s turn";
         }
         else { Debug.Log("Waiting"); }
     }
 
 
-    private void PlayerAttack()
+    public void PlayerAttack()
     {
         if (isPlayerTurn)
         {
             if (targetSelect == 0)
-            {
-                //BattleEnems.
+            {                
+                EnemData enemData1 = BattleEnems[0].GetComponent<EnemData>();
+                if (enemData1 == null)
+                {
+                    Debug.LogError("Didin't get enemData1");
+                }
+                enemData1.enem_hp -= 20;
+                dialogue.text = "deal 20 dmg";
             }
             else if (targetSelect == 1)
             {
-
+                enemData1.enem_hp -= 10;
+                dialogue.text = "deal 10 dmg";
             }
             else if (targetSelect == 2)
             {
-
+                enemData1.enem_hp -= 10;
+                dialogue.text = "deal 10 dmg";
             }
             else if (targetSelect == 3)
             {
-
+                enemData1.enem_hp -= 15;
+                dialogue.text = "deal 15 dmg";
             }
 
         }
@@ -133,7 +149,7 @@ public class FightSys : MonoBehaviour
         isEnemTurn = true;
         SelectTarget();
     }
-    private void PlayerSkill()
+    public void PlayerSkill()
     {
         if (isPlayerTurn)
         {
