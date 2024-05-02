@@ -58,43 +58,72 @@ public class FightSys : MonoBehaviour
 
         if (gameControl.isbattle == true)
         {
-            if (battleCounts == 0)
+            switch (battleCounts)
             {
-                BattleEnems.Add(Enems[0]);
-                Debug.Log("Add(Enems[0]");
-                SelectTurn();
-                dialogue.text = "You've Encounter <br>Angry Nerdy Fatty Rat!!! ";
-                return;
-            }
+                case 0:
+                    BattleEnems.Add(Enems[0]);
+                    Debug.Log("Add(Enems[0]");
+                    SelectTurn();
+                    dialogue.text = "You've Encounter <br>Angry Nerdy Fatty Rat!!! ";
+                    break;
+                case 1:
+                    BattleEnems.Add(Enems[1]);
+                    BattleEnems.Add(Enems[2]);
+                    dialogue.text = "You've Encounter <br> 2 Angry Nerdy Fatty Rat ";
+                    break;
+                case 2:
+                    BattleEnems.Add(Enems[3]);
+                    BattleEnems.Add(Enems[4]);
+                    dialogue.text = "You've Encounter <br> Angry Nerdy Fatty Rat and Weirdo flea ";
+                    break;
+                case 3:
+                    BattleEnems.Add(Enems[5]);
+                    BattleEnems.Add(Enems[6]);
+                    dialogue.text = "You've Encounter <br> 2 Angry Nerdy Fatty Rat ";
+                    break;
+                case 4:
+                    BattleEnems.Add(Enems[7]);
+                    dialogue.text = "You've Encounter <br> Angry Li ";
+                    break;
 
-            else if (battleCounts == 1)
-            {
-                BattleEnems.Add(Enems[1]);
-                BattleEnems.Add(Enems[2]);
-                dialogue.text = "You've Encounter <br> 2 Angry Nerdy Fatty Rat ";
             }
+            //if (battleCounts == 0)
+            //{
+            //    BattleEnems.Add(Enems[0]);
+            //    Debug.Log("Add(Enems[0]");
+            //    SelectTurn();
+            //    dialogue.text = "You've Encounter <br>Angry Nerdy Fatty Rat!!! ";
+            //    return;
+            //}
 
-            else if (battleCounts == 2)
-            {
-                
-                BattleEnems.Add(Enems[3]);
-                BattleEnems.Add(Enems[4]);
-                dialogue.text = "You've Encounter <br> Angry Nerdy Fatty Rat and Weirdo flea ";
-            }
+            //else if (battleCounts == 1)
+            //{
+            //    BattleEnems.Add(Enems[1]);
+            //    BattleEnems.Add(Enems[2]);
+            //    dialogue.text = "You've Encounter <br> 2 Angry Nerdy Fatty Rat ";
+            //}
 
-            else if (battleCounts == 3)
-            {
-                BattleEnems.Add(Enems[5]);
-                BattleEnems.Add(Enems[6]);
-                dialogue.text = "You've Encounter <br> 2 Angry Nerdy Fatty Rat ";
-            }
+            //else if (battleCounts == 2)
+            //{
 
-            else if (battleCounts == 4)
-            {
+            //    BattleEnems.Add(Enems[3]);
+            //    BattleEnems.Add(Enems[4]);
+            //    dialogue.text = "You've Encounter <br> Angry Nerdy Fatty Rat and Weirdo flea ";
+            //}
 
-                BattleEnems.Add(Enems[7]);
-                dialogue.text = "You've Encounter <br> Angry Li ";
-            }
+            //else if (battleCounts == 3)
+            //{
+            //    BattleEnems.Add(Enems[5]);
+            //    BattleEnems.Add(Enems[6]);
+            //    dialogue.text = "You've Encounter <br> 2 Angry Nerdy Fatty Rat ";
+            //}
+
+            //else if (battleCounts == 4)
+            //{
+
+            //    BattleEnems.Add(Enems[7]);
+            //    dialogue.text = "You've Encounter <br> Angry Li ";
+            //}
         }
     }
     public void EndBattle()
@@ -132,6 +161,26 @@ public class FightSys : MonoBehaviour
     {
         if (isPlayerTurn & !isWaiting)
         {
+            //switch (turnSelect)
+            //{
+            //    case 0:
+            //        player_attack = 20;
+            //        dialogue.text = "deal 20 dmg";
+            //        break;
+            //    case 1:
+            //        player_attack = 10;
+            //        dialogue.text = "deal 10 dmg";
+            //        break;
+            //    case 2:
+            //        player_attack = 10;
+            //        dialogue.text = "deal 10 dmg";
+            //        break;
+            //    case 3:
+            //        player_attack = 15;
+            //        dialogue.text = "deal 15 dmg";
+            //        break;
+            //}
+            //Debug.Log("Switch");
             if (turnSelect == 0)
             {
                 //find data
@@ -158,11 +207,11 @@ public class FightSys : MonoBehaviour
             }
 
         }
-        //isPlayerTurn = false;
-        //isEnemTurn = true;
-        //isWaiting = true;
-        //SelectTurn();
-        //EndBattle();
+
+        isPlayerTurn = false;
+        isEnemTurn = true;
+        SelectTurn();
+        EndBattle();
     }
 
     public void AttackTarget1()

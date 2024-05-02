@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 186b6a299e88dbe448f4a07c0d2e71c7
+guid: 18d462a5e044056488f85c48a7505178
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -40,10 +40,10 @@ TextureImporter:
     wrapU: 0
     wrapV: 0
     wrapW: 0
-  nPOTScale: 0
+  nPOTScale: 1
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 0
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -54,7 +54,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 0
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -115,416 +115,32 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Test_ArtBubble_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1745
-        width: 847
-        height: 382
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cca280a9b07d6bc4fb96c7acb9b28502
-      internalID: 699844575
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Test_ArtBubble_1
-      rect:
-        serializedVersion: 2
-        x: 900
-        y: 1745
-        width: 791
-        height: 382
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8ddb767001e8c974aa8768b3d66fb543
-      internalID: -1561690729
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Test_ArtBubble_2
-      rect:
-        serializedVersion: 2
-        x: 1745
-        y: 1745
-        width: 907
-        height: 382
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 59eac1f9a2569ea419beeec8e26015fa
-      internalID: 955764536
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Test_ArtBubble_3
-      rect:
-        serializedVersion: 2
-        x: 2706
-        y: 1745
-        width: 294
-        height: 382
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8878d6bad63df04f9605c7c686ef6f0
-      internalID: -2055213477
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Test_ArtBubble_4
-      rect:
-        serializedVersion: 2
-        x: 86
-        y: 1309
-        width: 1110
-        height: 384
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 21483009d434b444fad50d2551ceda09
-      internalID: -691042991
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Test_ArtBubble_5
-      rect:
-        serializedVersion: 2
-        x: 1250
-        y: 1309
-        width: 791
-        height: 384
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06c01c479e2794c4b8df3a2a99568dad
-      internalID: -406851329
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Test_ArtBubble_6
-      rect:
-        serializedVersion: 2
-        x: 2094
-        y: 1309
-        width: 850
-        height: 384
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1080c4aad5593fd439829e0c33fb6a1c
-      internalID: 1960201620
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Test_ArtBubble_7
-      rect:
-        serializedVersion: 2
-        x: 201
-        y: 872
-        width: 674
-        height: 383
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e43ed190c73b49439542aabe9d40020
-      internalID: -224103841
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Test_ArtBubble_8
-      rect:
-        serializedVersion: 2
-        x: 929
-        y: 872
-        width: 676
-        height: 383
-      alignment: 9
-      pivot: {x: 0.18269177, y: 0.09396131}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 980c5ed0e7e401943a0f6e454e7dce3d
-      internalID: 446666328
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Test_ArtBubble_9
-      rect:
-        serializedVersion: 2
-        x: 1658
-        y: 872
-        width: 645
-        height: 383
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e28b0cc99c60544e833ac4873bd94c0
-      internalID: 919344448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Test_ArtBubble_10
-      rect:
-        serializedVersion: 2
-        x: 2356
-        y: 872
-        width: 501
-        height: 383
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54e0b6e571b7b8c4894aa12dfe45d4b1
-      internalID: 854969121
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Test_ArtBubble_11
-      rect:
-        serializedVersion: 2
-        x: 201
-        y: 435
-        width: 674
-        height: 383
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d8575bc3f50a2a241bab55b1595b9f86
-      internalID: -931386730
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Test_ArtBubble_12
-      rect:
-        serializedVersion: 2
-        x: 929
-        y: 435
-        width: 791
-        height: 383
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9285faa4c21fc194ba2761890624b7ec
-      internalID: -1063912298
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Test_ArtBubble_13
-      rect:
-        serializedVersion: 2
-        x: 1775
-        y: 435
-        width: 644
-        height: 383
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d39d68a7e8ea724f8e541d65412df20
-      internalID: -525916108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Test_ArtBubble_14
-      rect:
-        serializedVersion: 2
-        x: 2473
-        y: 435
-        width: 355
-        height: 383
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e6f7705c0825cb241a37c12e40b27464
-      internalID: 356822327
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Test_ArtBubble_15
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 0
-        width: 995
-        height: 382
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f0c3b3b16d424f84c8e9f7d0c5d43d53
-      internalID: 1557713445
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Test_ArtBubble_16
-      rect:
-        serializedVersion: 2
-        x: 959
-        y: 0
-        width: 703
-        height: 382
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd03a044f2bb18f4f93e20ddae32f0b9
-      internalID: -1372612505
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Test_ArtBubble_17
-      rect:
-        serializedVersion: 2
-        x: 1716
-        y: 0
-        width: 1228
-        height: 382
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13d01e56ab060a8499be81c34258f99c
-      internalID: -1859286082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7c622871d1b01184e9d4bc5889a88de9
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Test_ArtBubble_17: -1859286082
-      Test_ArtBubble_4: -691042991
-      Test_ArtBubble_12: -1063912298
-      Test_ArtBubble_1: -1561690729
-      Test_ArtBubble_5: -406851329
-      Test_ArtBubble_15: 1557713445
-      Test_ArtBubble_7: -224103841
-      Test_ArtBubble_9: 919344448
-      Test_ArtBubble_2: 955764536
-      Test_ArtBubble_13: -525916108
-      Test_ArtBubble_10: 854969121
-      Test_ArtBubble_14: 356822327
-      Test_ArtBubble_3: -2055213477
-      Test_ArtBubble_8: 446666328
-      Test_ArtBubble_11: -931386730
-      Test_ArtBubble_0: 699844575
-      Test_ArtBubble_6: 1960201620
-      Test_ArtBubble_16: -1372612505
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
