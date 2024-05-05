@@ -10,6 +10,8 @@ public class Boss_Movement : MonoBehaviour
     private int currentMovePointIndex = 0;
     private int direction = 1; // 1 for forward, -1 for backward
 
+    public bool canMove = true;
+
     void Start()
     {
         if (movepoints.Length > 1)
@@ -21,10 +23,14 @@ public class Boss_Movement : MonoBehaviour
 
     void Update()
     {
-        Movement();
+        if (canMove)
+        {
+          Movement();
+        }
+
     }
 
-    private void Movement()
+    public void Movement()
     {
         if (currentMovePointIndex >= 0 && currentMovePointIndex < movepoints.Length)
         {

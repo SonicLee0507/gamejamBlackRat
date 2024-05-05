@@ -94,6 +94,27 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
+  - name: boss_atk_1_effec
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 327
+      width: 383
+      height: 175
+    spriteID: a546d2d94d074114093103c59fece878
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 327}
+    spritePosition: {x: 45, y: 154}
   - name: boss_atk_3_effec
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -102,10 +123,31 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
+      y: 510
       width: 240
       height: 150
-    spriteID: 400a0c4c033c86144a9cbc82033e3d2e
+    spriteID: b02108e5a1c663747b44b5a857dadd1d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 510}
+    spritePosition: {x: 82, y: 202}
+  - name: boss_atk_2_effec
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 280
+      height: 315
+    spriteID: 2dbccf97f2a8e344493e3f298077e757
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -114,7 +156,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 82, y: 202}
+    spritePosition: {x: 87, y: 110}
   characterData:
     bones: []
     parts: []
@@ -149,41 +191,41 @@ ScriptedImporter:
   mosaicPSDLayers: []
   rigPSDLayers:
   - name: boss_atk_1_effec
-    spriteName: 
+    spriteName: boss_atk_1_effec
     isGroup: 0
     parentIndex: -1
-    spriteID: b418714736d293c439fd0897954ff91d
-    layerID: 0
-    mosaicPosition: {x: 0, y: 0}
+    spriteID: a546d2d94d074114093103c59fece878
+    layerID: 5
+    mosaicPosition: {x: 4, y: 327}
     flatten: 0
-    isImported: 0
-    isVisible: 0
+    isImported: 1
+    isVisible: 1
   - name: boss_atk_3_effec
     spriteName: boss_atk_3_effec
     isGroup: 0
     parentIndex: -1
-    spriteID: 400a0c4c033c86144a9cbc82033e3d2e
-    layerID: 269005084
-    mosaicPosition: {x: 4, y: 4}
+    spriteID: b02108e5a1c663747b44b5a857dadd1d
+    layerID: 4
+    mosaicPosition: {x: 4, y: 510}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: boss_atk_2_effec
-    spriteName: 
+    spriteName: boss_atk_2_effec
     isGroup: 0
     parentIndex: -1
-    spriteID: 0d320a266c92cb446b74e180b93c35ce
-    layerID: -557128735
-    mosaicPosition: {x: 0, y: 0}
+    spriteID: 2dbccf97f2a8e344493e3f298077e757
+    layerID: 3
+    mosaicPosition: {x: 4, y: 4}
     flatten: 0
-    isImported: 0
-    isVisible: 0
+    isImported: 1
+    isVisible: 1
   - name: "\u80CC\u666F"
     spriteName: 
     isGroup: 0
     parentIndex: -1
-    spriteID: 938986a8ad13923428d5363a8de0286c
-    layerID: -1181847013
+    spriteID: 01d568c3afb92ad42baa44a1cfcd3042
+    layerID: 2
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0

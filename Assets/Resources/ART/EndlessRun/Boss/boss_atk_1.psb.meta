@@ -102,7 +102,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
+      y: 673
       width: 465
       height: 653
     spriteID: 65d523432ec0e124a8c9e0b8fe1763f9
@@ -113,9 +113,9 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 168, y: 14}
-  - name: "\u5716\u5C64 1"
+    uvTransform: {x: 4, y: 673}
+    spritePosition: {x: 263, y: 14}
+  - name: frame_2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -123,10 +123,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 665
-      width: 290
-      height: 197
-    spriteID: 02a1d42d5c823c14b968675ca0297be3
+      y: 4
+      width: 705
+      height: 661
+    spriteID: 5304d1017729f644c8435593ff92b25c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -134,8 +134,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 665}
-    spritePosition: {x: 174, y: 343}
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 23, y: 10}
   characterData:
     bones: []
     parts: []
@@ -175,30 +175,20 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 65d523432ec0e124a8c9e0b8fe1763f9
     layerID: 6
-    mosaicPosition: {x: 4, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: "\u5716\u5C64 1"
-    spriteName: "\u5716\u5C64 1"
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 02a1d42d5c823c14b968675ca0297be3
-    layerID: 14
-    mosaicPosition: {x: 4, y: 665}
+    mosaicPosition: {x: 4, y: 673}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: frame_2
-    spriteName: 
+    spriteName: frame_2
     isGroup: 0
     parentIndex: -1
     spriteID: 5304d1017729f644c8435593ff92b25c
     layerID: 13
-    mosaicPosition: {x: 0, y: 0}
+    mosaicPosition: {x: 4, y: 4}
     flatten: 0
-    isImported: 0
-    isVisible: 0
+    isImported: 1
+    isVisible: 1
   sharedRigPSDLayers: []
   pSDLayerImportSetting: []
   importFileNodeState: 1
