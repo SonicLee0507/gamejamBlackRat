@@ -114,7 +114,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 11, y: 38}
+    spritePosition: {x: 42, y: 42}
   - name: frame5
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -123,7 +123,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 582
+      y: 624
       width: 462
       height: 570
     spriteID: 2cb693d9ea55f36438b5088d6b13c6d9
@@ -134,8 +134,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 582}
-    spritePosition: {x: 11, y: 38}
+    uvTransform: {x: 4, y: 624}
+    spritePosition: {x: 42, y: 42}
   - name: frame4
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -144,7 +144,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 1160
+      y: 1244
       width: 367
       height: 648
     spriteID: 10ae1845ed76d1845950fbaf1e125008
@@ -155,8 +155,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 1160}
-    spritePosition: {x: 106, y: 38}
+    uvTransform: {x: 4, y: 1244}
+    spritePosition: {x: 144, y: 42}
   - name: frame3
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -164,7 +164,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 474
+      x: 508
       y: 4
       width: 402
       height: 564
@@ -176,8 +176,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 474, y: 4}
-    spritePosition: {x: 71, y: 41}
+    uvTransform: {x: 508, y: 4}
+    spritePosition: {x: 106, y: 45}
   - name: frame2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -185,8 +185,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 474
-      y: 576
+      x: 508
+      y: 618
       width: 376
       height: 569
     spriteID: b346ba88e79e3bb439e540fb86dfef4b
@@ -197,8 +197,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 474, y: 576}
-    spritePosition: {x: 98, y: 40}
+    uvTransform: {x: 508, y: 618}
+    spritePosition: {x: 135, y: 44}
   - name: frame1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -206,8 +206,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 474
-      y: 1153
+      x: 508
+      y: 1238
       width: 376
       height: 569
     spriteID: 47e771cc1d062f34db290a921a15b914
@@ -218,8 +218,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 474, y: 1153}
-    spritePosition: {x: 98, y: 40}
+    uvTransform: {x: 508, y: 1238}
+    spritePosition: {x: 135, y: 44}
   characterData:
     bones: []
     parts: []
@@ -269,7 +269,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 2cb693d9ea55f36438b5088d6b13c6d9
     layerID: 6
-    mosaicPosition: {x: 4, y: 582}
+    mosaicPosition: {x: 4, y: 624}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -279,7 +279,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 10ae1845ed76d1845950fbaf1e125008
     layerID: 5
-    mosaicPosition: {x: 4, y: 1160}
+    mosaicPosition: {x: 4, y: 1244}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -289,7 +289,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 77bcc7afdf5de1945b23b2d01487fa03
     layerID: 4
-    mosaicPosition: {x: 474, y: 4}
+    mosaicPosition: {x: 508, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -299,7 +299,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: b346ba88e79e3bb439e540fb86dfef4b
     layerID: 3
-    mosaicPosition: {x: 474, y: 576}
+    mosaicPosition: {x: 508, y: 618}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -309,7 +309,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 47e771cc1d062f34db290a921a15b914
     layerID: 2
-    mosaicPosition: {x: 474, y: 1153}
+    mosaicPosition: {x: 508, y: 1238}
     flatten: 0
     isImported: 1
     isVisible: 1

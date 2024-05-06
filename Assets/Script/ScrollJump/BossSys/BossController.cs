@@ -8,7 +8,7 @@ public class BossController : MonoBehaviour
     public Boss_Movement boss_Movement;
     [SerializeField] private int stage;
     public float movespeed;
-    [SerializeField] public Animator anim;
+    //[SerializeField] public Animator anim;
     [SerializeField] public Animator boss_anim;
 
     [SerializeField] public Slider boss_healthBar;
@@ -31,30 +31,30 @@ public class BossController : MonoBehaviour
         {
             boss_Movement.canMove = false;
             
-            anim.Play("atk_1");
-            anim.enabled = !anim.enabled;
-            boss_anim.Play("atk_3");
+            //anim.Play("atk_1");
+            //anim.enabled = !anim.enabled;
+            boss_anim.Play("atk_1");
         }
         if (Input.GetKeyDown(KeyCode.X))
         {
             boss_Movement.canMove = false;
-            anim.Play("atk_2");
-            anim.enabled = !anim.enabled;
-            boss_anim.Play("atk_3");
+            //anim.Play("atk_2");
+            //anim.enabled = !anim.enabled;
+            boss_anim.Play("atk_2");
         }
         if (Input.GetKeyDown(KeyCode.C))
         {
             boss_Movement.canMove = false;
-            anim.Play("atk_3");
-            anim.enabled = !anim.enabled;
+            //anim.Play("atk_3");
+            //anim.enabled = !anim.enabled;
             boss_anim.Play("atk_3");
         }
         if (Input.GetKeyDown(KeyCode.V))
         {
             boss_Movement.canMove = false;
-            anim.Play("atk_4");
-            anim.enabled = !anim.enabled;
-            boss_anim.Play("atk_3");
+            //anim.Play("atk_4");
+            //anim.enabled = !anim.enabled;
+            boss_anim.Play("atk_4");
         }
 
     }

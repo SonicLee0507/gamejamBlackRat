@@ -13,7 +13,11 @@ public class CameraControl : MonoBehaviour
     {
         instance = this;
     }
+    private void update()
+    {
 
+        PlayerShakeAnimation();
+    }
     public CinemachineImpulseSource impulseSource;
     // Update is called once per frame
  
