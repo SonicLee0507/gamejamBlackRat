@@ -35,21 +35,21 @@ public class BossController : MonoBehaviour
             //anim.enabled = !anim.enabled;
             boss_anim.Play("atk_1");
         }
-        if (Input.GetKeyDown(KeyCode.X))
+        else if (Input.GetKeyDown(KeyCode.X))
         {
             boss_Movement.canMove = false;
             //anim.Play("atk_2");
             //anim.enabled = !anim.enabled;
             boss_anim.Play("atk_2");
         }
-        if (Input.GetKeyDown(KeyCode.C))
+        else if (Input.GetKeyDown(KeyCode.C))
         {
             boss_Movement.canMove = false;
             //anim.Play("atk_3");
             //anim.enabled = !anim.enabled;
             boss_anim.Play("atk_3");
         }
-        if (Input.GetKeyDown(KeyCode.V))
+        else if (Input.GetKeyDown(KeyCode.V))
         {
             boss_Movement.canMove = false;
             //anim.Play("atk_4");
