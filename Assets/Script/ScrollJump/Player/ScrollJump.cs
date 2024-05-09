@@ -9,7 +9,7 @@ public class ScrollJump : MonoBehaviour
     public static float globalGravity = -9.81f;
 
     [SerializeField] private float jumpforce = 10f;
-    [SerializeField] private int jumpnumb = 1;
+    [SerializeField] public int jumpnumb = 1;
     // Start is called before the first frame update
     void Start()
     {
