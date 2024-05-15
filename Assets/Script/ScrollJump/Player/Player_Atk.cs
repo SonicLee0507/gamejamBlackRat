@@ -28,6 +28,7 @@ public class Player_Atk : MonoBehaviour
         else if(other.tag == "Enemy")
         {
             Debug.Log("HitEnemy");
+            Destroy(gameObject);
         }
     }
 
