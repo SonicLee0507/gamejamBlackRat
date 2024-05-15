@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class RoadBlock : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private float speed;
+    [SerializeField] private float Block_damage;
 
+    [SerializeField] private Rigidbody rig;
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        transform.Translate(-transform.right*speed*Time.deltaTime);
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            Debug.Log("PlayerHit");
+            other.GetComponent<Player_Control>().PlayerTakeDamage(Block_damage);
+            Destroy(gameObject);
+        }
     }
 }

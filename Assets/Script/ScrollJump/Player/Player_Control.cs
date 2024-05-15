@@ -8,19 +8,19 @@ public class Player_Control : MonoBehaviour
     [SerializeField] public ScrollJump scrollJump;
     [SerializeField] private int stage;
     //[SerializeField] public Animator anim;
-     public Animator player_anim;
+    public Animator player_anim;
 
-     public Slider player_healthBar;
-     public float player_hp;
-     public int player_maxhp;
+    public Slider player_healthBar;
+    public float player_hp;
+    public int player_maxhp;
 
     [SerializeField] private Image player_stage_image;
     [SerializeField] private Sprite[] player_stage_spritelist;
 
-     public GameObject Player;
-     public GameObject Arrow;
+    public GameObject Player;
+    public GameObject Arrow;
 
-     public Transform firepoint;
+    public Transform firepoint;
 
 
     void Start()
@@ -100,5 +100,10 @@ public class Player_Control : MonoBehaviour
 
         float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
         Player.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+    }
+
+    public void PlayerTakeDamage(float damageAmount)
+    {
+        player_hp -= damageAmount;
     }
 }
