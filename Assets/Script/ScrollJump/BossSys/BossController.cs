@@ -30,7 +30,7 @@ public class BossController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
         {
             boss_Movement.canMove = false;
-            
+
             //anim.Play("atk_1");
             //anim.enabled = !anim.enabled;
             boss_anim.Play("atk_1");
@@ -58,4 +58,6 @@ public class BossController : MonoBehaviour
         }
 
     }
+
+
 }

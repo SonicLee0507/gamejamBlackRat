@@ -1351,8 +1351,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: aa970dfe51167094f9f2117514d56cb7, type: 3}
   - {fileID: -1879810723, guid: 18697e3106bf7264e995cb793710ea00, type: 3}
   Player: {fileID: 3287855957427632352}
-  firepoint:
-  - {fileID: 79964334}
+  Arrow: {fileID: 678462220012951324, guid: fe583dbb2173c7b41b04f7538543628f, type: 3}
+  firepoint: {fileID: 79964334}
 --- !u!1 &595515180
 GameObject:
   m_ObjectHideFlags: 0
@@ -1422,10 +1422,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 728303670}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.037144, y: -28.227089, z: 5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1093623717}
+  - {fileID: 1685637811}
   m_Father: {fileID: 579393315}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1848,6 +1850,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000477022}
   m_CullTransparentMesh: 1
+--- !u!1 &1093623716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1093623717}
+  - component: {fileID: 1093623718}
+  m_Layer: 0
+  m_Name: RoadBlock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1093623717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093623716}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 728303671}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1093623718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093623716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df964401c0f1b264fab4f9bd3032b31b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LaunchPoint: {fileID: 0}
+  obj: []
+  timeBtwSpawns: 0
+  startTimeBtwSpawns: 0
+  minTimeBtwSpawns: 0
+  decrease: 0
 --- !u!1 &1151595665
 GameObject:
   m_ObjectHideFlags: 0
@@ -2432,6 +2484,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537754986}
   m_CullTransparentMesh: 1
+--- !u!1 &1685637810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1685637811}
+  - component: {fileID: 1685637812}
+  m_Layer: 0
+  m_Name: SkyBlock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1685637811
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685637810}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 728303671}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1685637812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685637810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df964401c0f1b264fab4f9bd3032b31b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LaunchPoint: {fileID: 0}
+  obj: []
+  timeBtwSpawns: 0
+  startTimeBtwSpawns: 0
+  minTimeBtwSpawns: 0
+  decrease: 0
 --- !u!1 &1750418598
 GameObject:
   m_ObjectHideFlags: 0
@@ -3041,12 +3143,15 @@ GameObject:
   - component: {fileID: 2047708378}
   - component: {fileID: 2047708380}
   - component: {fileID: 2047708379}
-  - component: {fileID: 2047708381}
+  - component: {fileID: 2047708387}
   - component: {fileID: 2047708384}
   - component: {fileID: 2047708383}
+  - component: {fileID: 2047708386}
+  - component: {fileID: 2047708385}
+  - component: {fileID: 2047708381}
   m_Layer: 0
   m_Name: Boss
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3080,7 +3185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b51b59859b9cbc4fa1ad34b59dea46a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossController: {fileID: 0}
+  bossController: {fileID: 1454889425}
   movespeed: 4.95
   movepoints:
   - {fileID: 787922357}
@@ -3225,6 +3330,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isShake: 0
   impulseSource: {fileID: 2047708383}
+--- !u!54 &2047708385
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047708377}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &2047708386
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047708377}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.1816308, y: 6.53, z: 0.2}
+  m_Center: {x: 0.7341846, y: 0, z: 0}
+--- !u!114 &2047708387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047708377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e49c9f14b9da7e54dbc804037bef4483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossController: {fileID: 1454889425}
 --- !u!1 &2071244904
 GameObject:
   m_ObjectHideFlags: 0
@@ -3397,7 +3544,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9aed81d85f8a0644baecbd0cb84c7ab1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e8bf3dd36a00c0d42982c64786335b69, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

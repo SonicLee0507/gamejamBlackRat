@@ -8,18 +8,19 @@ public class Player_Control : MonoBehaviour
     [SerializeField] public ScrollJump scrollJump;
     [SerializeField] private int stage;
     //[SerializeField] public Animator anim;
-    [SerializeField] public Animator player_anim;
+     public Animator player_anim;
 
-    [SerializeField] public Slider player_healthBar;
-    [SerializeField] public float player_hp;
-    [SerializeField] public int player_maxhp;
+     public Slider player_healthBar;
+     public float player_hp;
+     public int player_maxhp;
 
     [SerializeField] private Image player_stage_image;
     [SerializeField] private Sprite[] player_stage_spritelist;
 
-    [SerializeField] public GameObject Player;
+     public GameObject Player;
+     public GameObject Arrow;
 
-    [SerializeField] public Transform[] firepoint;
+     public Transform firepoint;
 
 
     void Start()
@@ -45,6 +46,7 @@ public class Player_Control : MonoBehaviour
             if (stage == 3)
             {
                 Debug.Log("stage == 3");
+                Instantiate(Arrow, firepoint.position, Quaternion.AngleAxis(0, Vector3.forward));
 
             }
         }
@@ -71,16 +73,19 @@ public class Player_Control : MonoBehaviour
         {
             stage = 1;
             player_stage_image.sprite = player_stage_spritelist[0];
+            player_anim.Play("stage_1");
         }
         else if (Input.GetKeyDown(KeyCode.W))
         {
             stage = 2;
             player_stage_image.sprite = player_stage_spritelist[1];
+            player_anim.Play("stage_2");
         }
         else if (Input.GetKeyDown(KeyCode.E))
         {
             stage = 3;
             player_stage_image.sprite = player_stage_spritelist[2];
+            player_anim.Play("stage_3");
         }
     }
 
