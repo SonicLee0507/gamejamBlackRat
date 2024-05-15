@@ -8,19 +8,19 @@ public class Player_Control : MonoBehaviour
     [SerializeField] public ScrollJump scrollJump;
     [SerializeField] private int stage;
     //[SerializeField] public Animator anim;
-    [SerializeField] public Animator player_anim;
+     public Animator player_anim;
 
-    [SerializeField] public Slider player_healthBar;
-    [SerializeField] public float player_hp;
-    [SerializeField] public int player_maxhp;
+     public Slider player_healthBar;
+     public float player_hp;
+     public int player_maxhp;
 
     [SerializeField] private Image player_stage_image;
     [SerializeField] private Sprite[] player_stage_spritelist;
 
-    [SerializeField] public GameObject Player;
-    [SerializeField] public GameObject Arrow;
+     public GameObject Player;
+     public GameObject Arrow;
 
-    [SerializeField] public Transform firepoint;
+     public Transform firepoint;
 
 
     void Start()
