@@ -9,9 +9,9 @@ public class Player_Atk : MonoBehaviour
     // Start is called before the first frame update
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        transform.position = Vector3.right * speed;
+        transform.position += Vector3.right * speed*Time.deltaTime;
         if (transform.position.x > 30)
         {
             Destroy(gameObject);
@@ -22,7 +22,7 @@ public class Player_Atk : MonoBehaviour
         if (other.tag == "Boss")
         {
             Debug.Log("HitBoss");
-            other.GetComponent<BossController>().BossTakeDamage(player_damage);
+            other.GetComponent<BossStat>().BossTakeDamage(player_damage);
             Destroy(gameObject);
         }
         else if(other.tag == "Enemy")

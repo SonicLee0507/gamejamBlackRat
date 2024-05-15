@@ -60,8 +60,4 @@ public class BossController : MonoBehaviour
     }
 
 
-    public void BossTakeDamage(float damageAmount)
-    {
-        boss_hp -= damageAmount;
-    }
 }
