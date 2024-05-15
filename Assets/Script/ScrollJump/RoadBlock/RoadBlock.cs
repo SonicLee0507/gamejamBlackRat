@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RoadBlock : MonoBehaviour
@@ -12,6 +10,10 @@ public class RoadBlock : MonoBehaviour
     void FixedUpdate()
     {
         transform.Translate(-transform.right*speed*Time.deltaTime);
+        if (transform.position.x < -20)
+        {
+            Destroy(gameObject);
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -21,5 +23,6 @@ public class RoadBlock : MonoBehaviour
             other.GetComponent<Player_Control>().PlayerTakeDamage(Block_damage);
             Destroy(gameObject);
         }
+
     }
 }
