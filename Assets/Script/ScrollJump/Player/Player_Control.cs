@@ -19,6 +19,8 @@ public class Player_Control : MonoBehaviour
 
     [SerializeField] public GameObject Player;
 
+    [SerializeField] public Transform[] firepoint;
+
 
     void Start()
     {
@@ -32,21 +34,18 @@ public class Player_Control : MonoBehaviour
 
         PlayerSkillSet();
 
-        Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        Player.transform.rotation = rotation;
-
 
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             if (stage == 2)
             {
-                Debug.Log("Input.GetKeyDown(KeyCode.Mouse1)");
+                Debug.Log("stage == 2");
+
             }
             if (stage == 3)
             {
-                Debug.Log("Input.GetKeyDown(KeyCode.Mouse1)");
+                Debug.Log("stage == 3");
+
             }
         }
         else if (Input.GetKey(KeyCode.Mouse1) & stage == 1)
@@ -55,12 +54,14 @@ public class Player_Control : MonoBehaviour
             if (scrollJump.jumpnumb == 0)
             {
                 Debug.Log("scrollJump.jumpnumb == 0");
-
-
+                Rotate();
             }
         }
 
-
+        if (scrollJump.jumpnumb == 1)
+        {
+            Player.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+        }
 
     }
 
@@ -83,4 +84,16 @@ public class Player_Control : MonoBehaviour
         }
     }
 
+    private void Rotate()
+    {
+        Vector3 mousePos = Input.mousePosition;
+        mousePos.z = 5.23f;
+
+        Vector3 objectPos = Camera.main.WorldToScreenPoint(transform.position);
+        mousePos.x = mousePos.x - objectPos.x;
+        mousePos.y = mousePos.y - objectPos.y;
+
+        float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
+        Player.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+    }
 }
