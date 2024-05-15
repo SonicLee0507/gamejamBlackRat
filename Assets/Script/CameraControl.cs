@@ -8,22 +8,15 @@ public class CameraControl : MonoBehaviour
     private CameraControl instance;
     public CameraControl Instance => instance;
 
-    [SerializeField]private bool isShake = false;
-
     // Start is called before the first frame update
     void Awake()
     {
         instance = this;
     }
-    private void Update()
+    private void update()
     {
-        if (isShake)
-        {       
-            PlayerShakeAnimation();
-            isShake = false;
-        }
 
-
+        PlayerShakeAnimation();
     }
     public CinemachineImpulseSource impulseSource;
     // Update is called once per frame

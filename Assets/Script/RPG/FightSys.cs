@@ -161,6 +161,26 @@ public class FightSys : MonoBehaviour
     {
         if (isPlayerTurn & !isWaiting)
         {
+            //switch (turnSelect)
+            //{
+            //    case 0:
+            //        player_attack = 20;
+            //        dialogue.text = "deal 20 dmg";
+            //        break;
+            //    case 1:
+            //        player_attack = 10;
+            //        dialogue.text = "deal 10 dmg";
+            //        break;
+            //    case 2:
+            //        player_attack = 10;
+            //        dialogue.text = "deal 10 dmg";
+            //        break;
+            //    case 3:
+            //        player_attack = 15;
+            //        dialogue.text = "deal 15 dmg";
+            //        break;
+            //}
+            //Debug.Log("Switch");
             if (turnSelect == 0)
             {
                 //find data
