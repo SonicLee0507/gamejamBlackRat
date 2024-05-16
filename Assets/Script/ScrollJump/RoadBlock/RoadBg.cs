@@ -1,18 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RoadBg : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameControl_SJ gameControl;
+    [SerializeField] private float speed;
+    private void Start()
     {
-        
-    }
+        GameObject gameObject;
+        gameObject = GameObject.FindGameObjectWithTag("GameController");
 
-    // Update is called once per frame
-    void Update()
+        gameControl = gameObject.GetComponent<GameControl_SJ>();
+    }
+    void FixedUpdate()
     {
-        
+        transform.Translate(-transform.right * speed * Time.deltaTime * gameControl.totalSpeed);
+        if (transform.position.x < -20)
+        {
+            Destroy(gameObject);
+        }
     }
 }
