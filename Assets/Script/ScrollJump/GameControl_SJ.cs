@@ -37,13 +37,13 @@ public class GameControl_SJ : MonoBehaviour
     private void FixedUpdate()
     {
                 
-        if (totalSpeed < 1)
+        if (totalSpeed < 2)
         {
-            totalSpeed += Time.deltaTime*0.02f;
+            totalSpeed += Time.deltaTime*0.1f;
         }
-        else if (totalSpeed > 1 )
+        else if (totalSpeed > 2 )
         {
-            totalSpeed = 1;
+            totalSpeed = 2;
         }
     }
 
