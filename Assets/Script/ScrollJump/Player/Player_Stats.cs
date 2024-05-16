@@ -11,6 +11,6 @@ public class Player_Stats : MonoBehaviour
     {
         player_Control.player_hp -= damageAmount;
         cameraControl.PlayerShakeAnimation();
-        gameControl.SlowTime(damageAmount*0.01f);
+        gameControl.SlowTime(damageAmount*0.05f);
     }
 }
