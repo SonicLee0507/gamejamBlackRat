@@ -52,14 +52,14 @@ public class Player_Control : MonoBehaviour
         else if (Input.GetKey(KeyCode.Mouse1) & stage == 1)
         {
             Debug.Log("Input.GetKey(KeyCode.Mouse1) & stage == 1");
-            if (scrollJump.jumpnumb == 0)
+            if (scrollJump.jumpnumb <= 1)
             {
                 Debug.Log("scrollJump.jumpnumb == 0");
                 Rotate();
             }
         }
 
-        if (scrollJump.jumpnumb == 1)
+        if (scrollJump.jumpnumb == 2)
         {
             Player.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
         }
@@ -101,8 +101,4 @@ public class Player_Control : MonoBehaviour
         Player.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
     }
 
-    public void PlayerTakeDamage(float damageAmount)
-    {
-        player_hp -= damageAmount;
-    }
 }

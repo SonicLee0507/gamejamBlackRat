@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class ScrollJump : MonoBehaviour
@@ -28,13 +27,13 @@ public class ScrollJump : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
 
-        if (collision.collider.tag == "Floor")
+        if (other.tag == "Floor")
         {       
             Debug.Log("HEHE");
-            jumpnumb = 1;
+            jumpnumb = 2;
         }
 
     }

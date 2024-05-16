@@ -4,6 +4,7 @@ public class RoadBlock : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float Block_damage;
+    [SerializeField] public float block_hp;
 
     [SerializeField] private Rigidbody rig;
     // Update is called once per frame
@@ -20,9 +21,15 @@ public class RoadBlock : MonoBehaviour
         if (other.tag == "Player")
         {
             Debug.Log("PlayerHit");
-            other.GetComponent<Player_Control>().PlayerTakeDamage(Block_damage);
+            other.GetComponent<Player_Stats>().PlayerTakeDamage(Block_damage);
+        }
+    }
+    public void BlockTakeDamage(float damageAmount)
+    {
+        block_hp -= damageAmount;
+        if (block_hp <= 0)
+        {
             Destroy(gameObject);
         }
-
     }
 }
