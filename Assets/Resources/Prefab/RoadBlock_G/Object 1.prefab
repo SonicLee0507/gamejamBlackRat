@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a545a7cccb258074d94646503c132c6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4.36
   Block_damage: 10
   block_hp: 100
   rig: {fileID: 9029456639992217667}
