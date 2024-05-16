@@ -18,8 +18,9 @@ public class Player_Control : MonoBehaviour
 
     public GameObject Player;
     public GameObject Arrow;
-
     public Transform firepoint;
+
+    public bool isBlock;
 
 
     void Start()
@@ -51,7 +52,7 @@ public class Player_Control : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.Mouse1) & stage == 1)
         {
-            Debug.Log("Input.GetKey(KeyCode.Mouse1) & stage == 1");
+            //Debug.Log("Input.GetKey(KeyCode.Mouse1) & stage == 1");
             if (scrollJump.jumpnumb <= 1)
             {
                 Debug.Log("scrollJump.jumpnumb == 0");
@@ -62,6 +63,7 @@ public class Player_Control : MonoBehaviour
         if (scrollJump.jumpnumb == 2)
         {
             Player.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+            isBlock = false;
         }
 
     }
@@ -99,6 +101,11 @@ public class Player_Control : MonoBehaviour
 
         float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
         Player.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+
+        if (Player.transform.rotation.z >= 60 & Player.transform.rotation.z <= 140 & !isBlock)
+        {
+            isBlock = true;
+        }
     }
 
 }
