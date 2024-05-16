@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,19 +7,20 @@ public class Player_Control : MonoBehaviour
     [SerializeField] public ScrollJump scrollJump;
     [SerializeField] private int stage;
     //[SerializeField] public Animator anim;
-     public Animator player_anim;
+    public Animator player_anim;
 
-     public Slider player_healthBar;
-     public float player_hp;
-     public int player_maxhp;
+    public Slider player_healthBar;
+    public float player_hp;
+    public int player_maxhp;
 
     [SerializeField] private Image player_stage_image;
     [SerializeField] private Sprite[] player_stage_spritelist;
 
-     public GameObject Player;
-     public GameObject Arrow;
+    public GameObject Player;
+    public GameObject Arrow;
+    public Transform firepoint;
 
-     public Transform firepoint;
+    public bool isBlock;
 
 
     void Start()
@@ -52,17 +52,18 @@ public class Player_Control : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.Mouse1) & stage == 1)
         {
-            Debug.Log("Input.GetKey(KeyCode.Mouse1) & stage == 1");
-            if (scrollJump.jumpnumb == 0)
+            //Debug.Log("Input.GetKey(KeyCode.Mouse1) & stage == 1");
+            if (scrollJump.jumpnumb <= 1)
             {
                 Debug.Log("scrollJump.jumpnumb == 0");
                 Rotate();
             }
         }
 
-        if (scrollJump.jumpnumb == 1)
+        if (scrollJump.jumpnumb == 2)
         {
             Player.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+            isBlock = false;
         }
 
     }
@@ -100,5 +101,11 @@ public class Player_Control : MonoBehaviour
 
         float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
         Player.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+
+        if (Player.transform.rotation.z >= 60 & Player.transform.rotation.z <= 140 & !isBlock)
+        {
+            isBlock = true;
+        }
     }
+
 }
