@@ -22,7 +22,7 @@ public class Player_Control : MonoBehaviour
 
     public bool isBlock;
 
-
+    public GameObject HitEffect;
     void Start()
     {
         player_healthBar.maxValue = player_maxhp;

@@ -13,8 +13,6 @@ public class BossController : MonoBehaviour
     [SerializeField] public Slider boss_healthBar;
     [SerializeField] public float boss_hp;
     [SerializeField] public int boss_maxhp;
-
-    public Transform[] atkpoints;
     // Start is called before the first frame update
     void Start()
     {

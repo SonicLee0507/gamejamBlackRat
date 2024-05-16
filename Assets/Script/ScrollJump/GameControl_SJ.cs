@@ -12,26 +12,7 @@ public class GameControl_SJ : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TimeCounter += Time.deltaTime * totalSpeed;
-        if (TimeCounter >= 10 & TimeCounter < 20 & stage == 0)
-        {
-            stage = 1;
-        }
-        else if(TimeCounter >= 20 & TimeCounter < 30 & stage == 1)
-        {
-            stage = 2;
-        }
-        else if (TimeCounter >= 30 & TimeCounter < 120 & stage == 2)
-        {
-            stage = 3;
-        }
-        else if (TimeCounter >= 120 & stage == 3)
-        {
-            stage = 4;
-        }
-
-
-
+        TimeCounting();
     }
 
     private void FixedUpdate()
@@ -51,5 +32,26 @@ public class GameControl_SJ : MonoBehaviour
     {
         totalSpeed -= decrease;
         Debug.Log("Slow "+ decrease + "% speed");
+    }
+
+    private void TimeCounting()
+    {
+        TimeCounter += Time.deltaTime * totalSpeed;
+        if (TimeCounter >= 10 & TimeCounter < 20 & stage == 0)
+        {
+            stage = 1;
+        }
+        else if(TimeCounter >= 20 & TimeCounter < 30 & stage == 1)
+        {
+            stage = 2;
+        }
+        else if (TimeCounter >= 30 & TimeCounter < 120 & stage == 2)
+        {
+            stage = 3;
+        }
+        else if (TimeCounter >= 120 & stage == 3)
+        {
+            stage = 4;
+        }
     }
 }

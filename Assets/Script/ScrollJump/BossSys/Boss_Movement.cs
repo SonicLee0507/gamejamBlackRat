@@ -11,7 +11,8 @@ public class Boss_Movement : MonoBehaviour
     private int direction = 1; // 1 for forward, -1 for backward
 
     public bool canMove = true;
-
+    public bool atkMove = true;
+    public Transform[] atkPoint;
     void Start()
     {
         if (movepoints.Length > 1)
@@ -27,7 +28,10 @@ public class Boss_Movement : MonoBehaviour
         {
           Movement();
         }
-
+        if (atkMove)
+        {
+            Atk_Movement();
+        }
     }
 
     public void Movement()
@@ -53,5 +57,10 @@ public class Boss_Movement : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void Atk_Movement()
+    {
+        transform.position = atkPoint[Random.Range(0, atkPoint.Length)].position;
     }
 }

@@ -9,7 +9,13 @@ public class Player_Stats : MonoBehaviour
     public GameControl_SJ gameControl;
     public void PlayerTakeDamage(float damageAmount)
     {
-        player_Control.player_hp -= damageAmount;
+        if (player_Control.isBlock)
+        {
+            player_Control.HitEffect.SetActive(true);
+            Instantiate(player_Control.HitEffect, transform.position, Quaternion.AngleAxis(0, Vector3.forward));
+        }
+        else { player_Control.player_hp -= damageAmount; }
+
         cameraControl.PlayerShakeAnimation();
         gameControl.SlowTime(damageAmount*0.05f);
     }
