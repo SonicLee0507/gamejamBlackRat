@@ -7,8 +7,9 @@ public class LoadScene : MonoBehaviour
 {
 
     // Update is called once per frame
-    public void Load()
+    public void Load(string name)
     {
-        SceneManager.LoadScene("Game");
+        Debug.Log("Load");
+        SceneManager.LoadScene(name);
     }
 }

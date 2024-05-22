@@ -13,17 +13,28 @@ public class BossController : MonoBehaviour
     [SerializeField] public Slider boss_healthBar;
     [SerializeField] public float boss_hp;
     [SerializeField] public int boss_maxhp;
+    public float boss_AtkTime;
+    public float boss_MaxAtkTime;
     // Start is called before the first frame update
     void Start()
     {
         boss_healthBar.maxValue = boss_maxhp;
+        boss_AtkTime = boss_MaxAtkTime;
     }
 
     // Update is called once per frame
     void Update()
     {
         boss_healthBar.value = boss_hp;
-
+        if (boss_AtkTime > 0)
+        {
+            boss_AtkTime -= Time.deltaTime;
+        }
+        else if (boss_AtkTime <= 0)
+        {
+            boss_AtkTime = boss_MaxAtkTime;
+            boss_anim.Play("atk_" + Random.Range(1, 3));
+        }
         if (Input.GetKeyDown(KeyCode.Z))
         {
             boss_Movement.canMove = false;

@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class GameControl_SJ : MonoBehaviour
 {
+    public Player_Control player_Control;
+
     public float totalSpeed;
     public int stage;
 
     public float TimeCounter;
 
+    [SerializeField]private GameObject LostPage;
     // Update is called once per frame
     void Update()
     {
@@ -18,13 +21,21 @@ public class GameControl_SJ : MonoBehaviour
     private void FixedUpdate()
     {
                 
-        if (totalSpeed < 2)
+        if (totalSpeed < 2 & totalSpeed > 0)
         {
             totalSpeed += Time.deltaTime*0.1f;
         }
         else if (totalSpeed > 2 )
         {
             totalSpeed = 2;
+        }
+        else if (totalSpeed <=0)
+        {
+            LostPage.SetActive(true);
+        }
+        if(player_Control.player_hp <= 0)
+        {
+            LostPage.SetActive(true);
         }
     }
 
