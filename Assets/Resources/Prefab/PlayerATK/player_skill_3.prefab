@@ -33,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &678462220012951326
 SpriteRenderer:
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72be7de9e86a3be4686f9757c2f1407f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameControl: {fileID: 0}
   speed: 5
   player_damage: 10
   effect: {fileID: 2515474344445897753, guid: 0bd06899d32a61942b3952f641fe9ad2, type: 3}
@@ -129,5 +130,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.07, y: 0.54, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.6193781, y: 0.54, z: 0.2}
+  m_Center: {x: 1.2253108, y: 0, z: 0}

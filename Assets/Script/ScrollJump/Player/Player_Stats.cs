@@ -20,7 +20,7 @@ public class Player_Stats : MonoBehaviour
         else if (player_Control.isCaptureing)
         {
             player_Control.player_hp -= damageAmount;
-            gameControl.totalSpeed = 1.5f;
+            gameControl.totalSpeed = 2.5f;
         }
         else 
         {

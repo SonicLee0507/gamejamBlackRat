@@ -27,7 +27,7 @@ public class GameControl_SJ : MonoBehaviour
     private void Start()
     {
         TimeBar.maxValue = TimeWin;
-        SpeedBar.maxValue = 2;
+        SpeedBar.maxValue = 3;
     }
     void Update()
     {
@@ -39,13 +39,13 @@ public class GameControl_SJ : MonoBehaviour
     private void FixedUpdate()
     {
                 
-        if (totalSpeed < 2 & totalSpeed > 0)
+        if (totalSpeed < 3 & totalSpeed > 0)
         {
-            totalSpeed += Time.deltaTime*0.1f;
+            totalSpeed += Time.deltaTime*0.2f;
         }
-        else if (totalSpeed > 2 )
+        else if (totalSpeed > 3 )
         {
-            totalSpeed = 2;
+            totalSpeed = 3;
         }
         else if (totalSpeed <=0)
         {
@@ -90,13 +90,13 @@ public class GameControl_SJ : MonoBehaviour
             //TutorPage2.SetActive(true);
             //stop.StopDeGame();
         }
-        else if (TimeCounter >= 30 & TimeCounter < 120 & stage == 2)
+        else if (TimeCounter >= 30 & TimeCounter < 60 & stage == 2)
         {
             TutorPage3.SetActive(true);
             stop.StopDeGame();
             stage = 3;
         }
-        else if (TimeCounter >= 120 & stage == 3)
+        else if (TimeCounter >= 60 & stage == 3)
         {
             Boss.SetActive(true);
             stage = 4;

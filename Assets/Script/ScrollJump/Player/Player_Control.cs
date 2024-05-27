@@ -67,10 +67,10 @@ public class Player_Control : MonoBehaviour
                 player_anim.Play("stage_2_capturing");
             }
         }
-        else if (Input.GetKeyUp(KeyCode.Mouse1) & stage == 2)
+        else if (Input.GetKeyUp(KeyCode.Mouse1) )
         {
             isCaptureing = false;
-            player_anim.Play("stage_2");
+            if ( stage == 2) { player_anim.Play("stage_2"); }
         }
 
         if (scrollJump.jumpnumb == 2)

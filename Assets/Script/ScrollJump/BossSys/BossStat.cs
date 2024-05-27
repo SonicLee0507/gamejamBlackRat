@@ -7,6 +7,11 @@ public class BossStat : MonoBehaviour
     public void BossTakeDamage(float damageAmount)
     {
         bossController.boss_hp -= damageAmount;
-        bossController.boss_anim.Play("Hitted");
+        if (bossController.boss != null)
+        {
+        bossController.boss_anim.Play("Hitted");    
+        }
+        else {bossController.boss2_anim.Play("Hitted"); }
+        
     }
 }
