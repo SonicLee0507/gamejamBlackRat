@@ -9,6 +9,8 @@ public class ScrollJump : MonoBehaviour
 
     [SerializeField] private float jumpforce = 10f;
     [SerializeField] public int jumpnumb = 1;
+
+    [SerializeField] private GameObject groundFlare;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,5 +40,18 @@ public class ScrollJump : MonoBehaviour
 
     }
 
-
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Floor")
+        {
+            groundFlare.SetActive(true);
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Floor")
+        {
+            groundFlare.SetActive(false);
+        }
+    }
 }

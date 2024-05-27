@@ -1,21 +1,39 @@
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class GameControl_SJ : MonoBehaviour
 {
     public Player_Control player_Control;
+    public StopGame stop;
 
     public float totalSpeed;
     public int stage;
 
     public float TimeCounter;
+    public float TimeWin;
 
     [SerializeField]private GameObject LostPage;
+
+    [SerializeField] private GameObject TutorPage1;
+    [SerializeField] private GameObject TutorPage2;
+    [SerializeField] private GameObject TutorPage3;
+
+    [SerializeField] private GameObject SkyBlock;
+    [SerializeField] private GameObject Boss;
+    public Slider TimeBar;
+    public Slider SpeedBar;
     // Update is called once per frame
+
+    private void Start()
+    {
+        TimeBar.maxValue = TimeWin;
+        SpeedBar.maxValue = 2;
+    }
     void Update()
     {
         TimeCounting();
+        TimeBar.value = TimeCounter;
+        SpeedBar.value = totalSpeed;
     }
 
     private void FixedUpdate()
@@ -49,19 +67,38 @@ public class GameControl_SJ : MonoBehaviour
     {
         TimeCounter += Time.deltaTime * totalSpeed;
         if (TimeCounter >= 10 & TimeCounter < 20 & stage == 0)
-        {
+        {      
+            TutorPage1.SetActive(true);
+            SkyBlock.SetActive(true);
+            stop.StopDeGame();
             stage = 1;
+        }
+        else if (TimeCounter >= 15 & TimeCounter < 16)
+        {
+            //TutorPage1.SetActive(true);
+            //SkyBlock.SetActive(true);
+            //stop.StopDeGame();
         }
         else if(TimeCounter >= 20 & TimeCounter < 30 & stage == 1)
         {
+            TutorPage2.SetActive(true);
+            stop.StopDeGame();
             stage = 2;
+        }
+        else if (TimeCounter == 20)
+        {
+            //TutorPage2.SetActive(true);
+            //stop.StopDeGame();
         }
         else if (TimeCounter >= 30 & TimeCounter < 120 & stage == 2)
         {
+            TutorPage3.SetActive(true);
+            stop.StopDeGame();
             stage = 3;
         }
         else if (TimeCounter >= 120 & stage == 3)
         {
+            Boss.SetActive(true);
             stage = 4;
         }
     }

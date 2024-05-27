@@ -104,6 +104,7 @@ MonoBehaviour:
   Block_damage: 10
   block_hp: 5
   rig: {fileID: 5771694531876155317}
+  isBirdy: 1
 --- !u!54 &5771694531876155317
 Rigidbody:
   m_ObjectHideFlags: 0

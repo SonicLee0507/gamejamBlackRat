@@ -8,6 +8,8 @@ public class RoadBlock : MonoBehaviour
     [SerializeField] public float block_hp;
 
     [SerializeField] private Rigidbody rig;
+
+    [SerializeField] private bool isBirdy = false;
     // Update is called once per frame
     private void Start()
     {
@@ -29,7 +31,26 @@ public class RoadBlock : MonoBehaviour
         if (other.tag == "Player")
         {
             Debug.Log("PlayerHit");
-            other.GetComponent<Player_Stats>().PlayerTakeDamage(Block_damage);
+
+            if (other.GetComponent<Player_Stats>().player_Control.isCaptureing)
+            {
+                if (isBirdy)
+                {
+                    other.GetComponent<Player_Stats>().PlayerHeal(Block_damage);
+                    BlockTakeDamage(Block_damage);
+                }
+                else
+                {
+                    other.GetComponent<Player_Stats>().PlayerTakeDamage(Block_damage);
+                    BlockTakeDamage(Block_damage);
+                }
+            }
+            else
+            {
+                other.GetComponent<Player_Stats>().PlayerTakeDamage(Block_damage);
+            }
+
+
         }
     }
     public void BlockTakeDamage(float damageAmount)

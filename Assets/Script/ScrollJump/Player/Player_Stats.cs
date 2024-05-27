@@ -11,12 +11,28 @@ public class Player_Stats : MonoBehaviour
     {
         if (player_Control.isBlock)
         {
-            player_Control.HitEffect.SetActive(true);
+            //player_Control.HitEffect.SetActive(true);
             Instantiate(player_Control.HitEffect, transform.position, Quaternion.AngleAxis(0, Vector3.forward));
+            Time.timeScale = 0.3f;
+            gameControl.SlowTime(damageAmount * 0.05f);
+            //player_Control.HitEffect.SetActive(false);
         }
-        else { player_Control.player_hp -= damageAmount; }
+        else if (player_Control.isCaptureing)
+        {
+            player_Control.player_hp -= damageAmount;
+            gameControl.totalSpeed = 1.5f;
+        }
+        else 
+        {
+            player_Control.player_hp -= damageAmount;
+            gameControl.SlowTime(damageAmount * 0.05f);
+        }
 
         cameraControl.PlayerShakeAnimation();
-        gameControl.SlowTime(damageAmount*0.05f);
+    }
+
+    public void PlayerHeal(float healAmount)
+    {
+        player_Control.player_hp += healAmount;
     }
 }

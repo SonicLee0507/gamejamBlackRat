@@ -12,6 +12,7 @@ public class Boss_Movement : MonoBehaviour
 
     public bool canMove = true;
     public bool atkMove = true;
+    public bool hyperArmor = false;
     public Transform[] atkPoint;
     void Start()
     {

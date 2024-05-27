@@ -16,11 +16,14 @@ public class Player_Control : MonoBehaviour
     [SerializeField] private Image player_stage_image;
     [SerializeField] private Sprite[] player_stage_spritelist;
 
+
     public GameObject Player;
     public GameObject Arrow;
     public Transform firepoint;
 
     public bool isBlock;
+
+    public bool isCaptureing = false;
 
     public GameObject HitEffect;
     void Start()
@@ -50,14 +53,24 @@ public class Player_Control : MonoBehaviour
 
             }
         }
-        else if (Input.GetKey(KeyCode.Mouse1) & stage == 1)
+        else if (Input.GetKey(KeyCode.Mouse1))
         {
             //Debug.Log("Input.GetKey(KeyCode.Mouse1) & stage == 1");
-            if (scrollJump.jumpnumb <= 1)
+            if (scrollJump.jumpnumb <= 1 & stage == 1)
             {
                 Debug.Log("scrollJump.jumpnumb == 0");
                 Rotate();
             }
+            if (stage == 2)
+            {
+                isCaptureing = true;
+                player_anim.Play("stage_2_capturing");
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.Mouse1) & stage == 2)
+        {
+            isCaptureing = false;
+            player_anim.Play("stage_2");
         }
 
         if (scrollJump.jumpnumb == 2)
@@ -102,7 +115,7 @@ public class Player_Control : MonoBehaviour
         float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
         Player.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
 
-        if (Player.transform.rotation.z >= 60 & Player.transform.rotation.z <= 140 & !isBlock)
+        if (angle > 60f & angle < 140f )
         {
             isBlock = true;
         }
