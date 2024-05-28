@@ -111,7 +111,7 @@ public class BossController : MonoBehaviour
                 Destroy(boss, 5);
                 Invoke("NullifyBoss", 5);
             }
-            if(boss == null)
+            if(boss == null& stage == 1)
             {
                 stage = 2;
                 boss_hp = boss_maxhp;
@@ -120,8 +120,7 @@ public class BossController : MonoBehaviour
             if (boss2 != null& stage == 3)
             {
                 boss2_anim.Play("Trans");
-                Destroy(boss, 5);
-                Invoke("NullifyBoss", 5);
+                Destroy(boss2, 5);
             }
         }
 
