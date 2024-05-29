@@ -13,6 +13,7 @@ public class GameControl_SJ : MonoBehaviour
     public float TimeWin;
 
     [SerializeField]private GameObject LostPage;
+    [SerializeField] private GameObject WinPage;
 
     [SerializeField] private GameObject TutorPage1;
     [SerializeField] private GameObject TutorPage2;
@@ -28,12 +29,17 @@ public class GameControl_SJ : MonoBehaviour
     {
         TimeBar.maxValue = TimeWin;
         SpeedBar.maxValue = 3;
+        stop.StopDeGame();
     }
     void Update()
     {
         TimeCounting();
         TimeBar.value = TimeCounter;
         SpeedBar.value = totalSpeed;
+        if(TimeCounter > TimeWin)
+        {
+            WinPage.SetActive(true);
+        }
     }
 
     private void FixedUpdate()
