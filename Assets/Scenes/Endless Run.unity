@@ -9770,9 +9770,9 @@ MonoBehaviour:
   totalSpeed: 1
   stage: 0
   TimeCounter: 0
-  TimeWin: 300
+  TimeWin: 250
   LostPage: {fileID: 1762961651}
-  WinPage: {fileID: 0}
+  WinPage: {fileID: 247550902}
   TutorPage1: {fileID: 800066787}
   TutorPage2: {fileID: 694054875}
   TutorPage3: {fileID: 2037798522}
@@ -9842,8 +9842,8 @@ MonoBehaviour:
   stage: 1
   player_anim: {fileID: 8404432509282031135}
   player_healthBar: {fileID: 1522994833}
-  player_hp: 10000
-  player_maxhp: 10000
+  player_hp: 100
+  player_maxhp: 100
   player_stage_image: {fileID: 1000477024}
   player_stage_spritelist:
   - {fileID: 251220584, guid: 2bf518cfd9146144881cd53573924afc, type: 3}

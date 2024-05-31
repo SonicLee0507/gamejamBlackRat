@@ -55,7 +55,7 @@ public class BossController : MonoBehaviour
             }
 
         }
-        if (Input.GetKeyDown(KeyCode.Keypad0))
+        if (Input.GetKeyDown(KeyCode.Keypad0) || Input.GetButtonDown("BossATK1"))
         {
             boss_Movement.canMove = false;
             if (boss != null)
@@ -67,7 +67,7 @@ public class BossController : MonoBehaviour
                 boss2_anim.Play("atk_1");
             }
         }
-        else if (Input.GetKeyDown(KeyCode.Keypad1))
+        else if (Input.GetKeyDown(KeyCode.Keypad1) || Input.GetButtonDown("BossATK2"))
         {
             boss_Movement.canMove = false;
             if (boss != null)
@@ -79,7 +79,7 @@ public class BossController : MonoBehaviour
                 boss2_anim.Play("atk_2");
             }
         }
-        else if (Input.GetKeyDown(KeyCode.Keypad2))
+        else if (Input.GetKeyDown(KeyCode.Keypad2) || Input.GetButtonDown("BossATK3"))
         {
             boss_Movement.canMove = false;
             if (boss != null)
@@ -91,7 +91,7 @@ public class BossController : MonoBehaviour
                 boss2_anim.Play("atk_3");
             }
         }
-        else if (Input.GetKeyDown(KeyCode.Keypad3))
+        else if (Input.GetKeyDown(KeyCode.Keypad3) || Input.GetButtonDown("BossATK4"))
         {
             if (boss != null)
             {

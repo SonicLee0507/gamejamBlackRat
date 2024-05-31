@@ -5684,6 +5684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b336455cbe00b4d4f8cfb494f2cd2cf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isShake: 0
   impulseSource: {fileID: 1750418601}
 --- !u!1 &1019505234
 GameObject:
